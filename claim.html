@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Claim</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="topnav">
+			<a href="index.html" class="active">Home</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="products.html">Products</a>
+			<a href="claim.html">Claim</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</header>
+
+	<div class="body">
+		<h1>Fill in the form and we will contact you</h1>
+		<form>
+			<label for="fn">Full Name(Required)</label>
+			<input required id="fn" type="text" name="full_name" placeholder="Enter full name" />
+			
+			
+			<label for="email">Email Address(Required)</label>
+			<input required id="email" type="email" name="email" placeholder="Enter Email" />
+			
+			<label for="number">Mobile Number(SA Rquired)</label>
+			<input id="number" type="tel" name="number" placeholder="Enter Cellphone Number" />
+			
+			
+			<label for="query">Query Reasons(Required)</label>
+			<select id="query">
+				<option value="General Query">General Query</option>
+				<option value="Policy Details">Policy Details</option>
+				<option value="Claims Query">Claims Query</option>
+				<option value="Cancellation">Cancellation</option>
+			</select>
+			
+			<label>Comment(Required)</label>
+			<input required type="textarea" name="message" placeholder="Enter message query message" />
+		</form>
+	</div>
+
+	<footer>
+		
+	</footer>
+</body>
+</html>
