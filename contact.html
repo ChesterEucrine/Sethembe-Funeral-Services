@@ -3,29 +3,71 @@
 <head>
 	<title>Contact</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
 	<header>
 
 		<div class="menu">
 			<ul>
-				<li><img class="logo" src="logo.png"></li>
-				<li class="active"><a href="index.html"><span>Home</span></a></li>
-				<li><a href="aboutus.html"><span>About Us</span></a></li>
-				<li><a href="products.html"><span>Products</span></a></li>
-				<li><a href="claim.html"><span>Claim</span></a></li>
-				<li><a href="contact.html"><span>Contact</span></a></li>
+				<li><img class="logo" src="logoweb.png"></li>
+				<li id="home"><a href="index.html"><span>Home</span></a></li>
+				<li id="aboutus"><a href="aboutus.html"><span>About Us</span></a></li>
+				<li id="products"><a href="products.html"><span>Products</span></a></li>
+				<li id="claim"><a href="claim.html"><span>Claim</span></a></li>
+				<li id="contact"><a href="contact.html"><span>Contact</span></a></li>
 				<!--<li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>-->
 			</ul>
 		</div>
 	</header>
 
-	<div class="body">
-		
-	</div>
+	<div class="body form">
+		<h1>Fill in the form and we will contact you</h1>
+		<form>
+			<label for="fn">Full Name(Required)</label>
+			<input required id="fn" type="text" name="full_name" placeholder="Enter full name" />
+			
+			
+			<label for="email">Email Address(Required)</label>
+			<input required id="email" type="email" name="email" placeholder="Enter Email" />
+			
+			<label for="number">Mobile Number(SA Rquired)</label>
+			<input id="number" type="tel" name="number" placeholder="Enter Cellphone Number" />
+			
+			
+			<label for="query">Query Reasons(Required)</label>
+			<select id="query">
+				<option value="General Query">General Query</option>
+				<option value="Policy Details">Policy Details</option>
+				<option value="Claims Query">Claims Query</option>
+				<option value="Cancellation">Cancellation</option>
+			</select>
+			
+			<label>Comment(Required)</label>
+			<input id="textarea" required type="textarea" name="message" placeholder="Enter message query message" />
 
+			<div class="submit"><input type="submit" name="submit-claim" value="Submit"></div>
+		</form>
+	</div>
 	<footer>
-		
+		<a href="https://www.facebook.com/"><figure>
+			<img src="images/facebook.svg" alt="Facebook logo" />
+			<figcaption>Facebook</figcaption>
+		</figure></a>
+		<figure>
+			<img src="images/instagram.svg" alt="Instagram logo" />
+			<figcaption>Instagram</figcaption>
+		</figure>
+		<figure>
+			<img src="images/youtube.svg" alt="Youtube logo" />
+			<figcaption>Youtube</figcaption>
+		</figure>
+		<div class="copyright">
+			© 2020 Gavanni. All Rights Reserved. New Era Life Insurance Co Ltd is an Authorised Financial Service Provider and registered insurer. FSP 2736 | KGA Life Limited, a licensed Insurer and Authorised Financial Services Provider. FSP 15980  T's and C's apply.
+		</div>
 	</footer>
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
 </body>
 </html>

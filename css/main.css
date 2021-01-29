@@ -13,7 +13,7 @@ body {
 
 .menu ul {
 	display: inline-flex;
-	margin: 50px;
+	margin-top: 30px;
 }
 
 .menu li {
@@ -39,21 +39,22 @@ body {
 }
 
 .logo {
-	width: 60px;
-	height: 60px;
+	width: 180px;
+	height: 80px;
 	margin-top: -25px;
-	margin-right: 48px;
+	margin-right: 12px;
 }
 
 /*			Style for Forms			*/
 
 .body {
+	margin-top: -12;
 	border: 2px solid #000080;
 }
 
 .body.form {
 	text-align: center;
-	font-size: 2.2em;
+	font-size: 2.0em;
 }
 
 .body h1 {
@@ -68,6 +69,8 @@ p {
 
 form {
 	background-color: #0A81D1;
+	color: #D1B000;
+	padding-bottom: 25px;
 }
 
 form  * {
@@ -75,8 +78,63 @@ form  * {
 }
 
 input, select {
-	width: 100%;
+	width: 96%;
 	height: 20px;
 	padding: 10px;
+	margin: 10px;
 	font-size: large; 
+}
+
+select {
+	margin-left: 20px;
+	height: 40px;
+	font-size: medium;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#textarea {
+	width: 96%;
+	height: 80px;
+}
+
+.submit {
+	width: 96%;
+	height: 20%;
+	text-align: right;
+}
+
+.submit input {
+	width: 20%;
+	height: 100%;
+}
+
+/*			Footer CSS			*/
+
+footer {
+  text-align: center;
+  background-color: #ccc;
+  font-size: 1.0em;
+}
+
+figure {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #000080;
+}
+
+figure img{
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+}
+
+figure figcaption {
+	display: none;
+}
+
+.copyright {
+	color: #000080;
+	text-align: center;
 }
