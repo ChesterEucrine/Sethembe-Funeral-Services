@@ -11,6 +11,12 @@ body {
 	height: 100%;
 }
 
+.main {
+}
+
+.main:hover {
+}
+
 .menu ul {
 	display: inline-flex;
 	margin-top: 30px;
@@ -26,7 +32,10 @@ body {
 }
 
 .menu li a {
+/**/	padding: 10px;
 	text-decoration: none;
+/**/	box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+/**/	transition: 0.3s;
 }
 
 .menu li.active a{
@@ -36,6 +45,7 @@ body {
 
 .menu li a:hover {
 	color: #FFD700;
+/**/	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .logo {
