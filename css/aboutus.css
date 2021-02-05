@@ -1,0 +1,103 @@
+.body {
+  width: 100%;
+}
+
+.section1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.section1 div {
+  display: inline-block;
+}
+
+.section1 .aboutusinfo {
+  width: 1000px;
+  height: 500px;
+  padding: 30px;
+  font-size: 45px;
+}
+
+.section1 .aboutusinfo h1 {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  background: #fab400;
+  position: relative;
+  left: -125px;
+  width: 1040px;
+}
+
+.section1 .aboutusinfo p {
+  font-size: 38px;
+}
+
+.section1 .ceo_info {
+  margin: 20px;
+  padding: 10px;
+  position: absolute;
+  width: 30%;
+  height: 520px;
+}
+
+.section1 .ceo_info div {
+  display: block;
+  margin: 10px;
+  height: 48%;
+  text-align: center;
+}
+
+.ondela figure figcaption , .mlibo figure figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ondela figure img, .mlibo figure img{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+/*            SECTION 2           */
+
+.section2 {
+  height: 600px;
+  width: 97%;
+  padding: 10px;
+}
+
+.section2 div {
+  display: inline-block;
+}
+
+.section2 div img {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  top: 120px;
+  z-index: -1;
+}
+
+.section2 .sub_info {
+  position: absolute;
+  left: 1000px;
+  margin:12px;
+  padding: 80px;
+  width: 700px;
+  height: 450px;
+}
+
+.section2 .sub_info p {
+  font-size: 37px;
+}
+
+.section2 .sub_info .head_cover {
+  position: relative;
+  top: 60px;
+  left: 170px;
+  font-size: 45px;
+  background: #1c206d;
+  padding: 10px;
+  color: #fff;
+  width: 400px;
+}

@@ -1,0 +1,128 @@
+div {
+  border: 1px solid transparent;
+}
+
+body {
+  width: 100%;
+}
+
+.contact_background_family {
+  background-image: url("/images/family8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact_background_family h1 {
+  color: #fab400;
+  margin: 30px;
+  margin-top: 200px;
+  font-size: 160px;
+}
+
+.contact_background_family p {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.container {
+  width: 97%;
+  height: 800px;
+}
+
+.container  div {
+   display: inline-block;
+}
+
+.contact_yellow_block {
+  background: #fab400;
+  height: 700px;
+  width: 150px;
+  top: 1100px;
+  position: absolute;
+}
+
+.static_info {
+  position: absolute;
+  left: 170px;
+  height: 700px;
+  width: 600px;
+}
+
+.static_info div {
+  display: block;
+}
+
+.static_info .s1 {
+  margin-top: 150px;
+}
+
+.static_info .s1 span {
+  display: block;
+}
+
+.static_info .s1 span span {
+  position: relative;
+  left: 100px;
+  top: -60px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.static_info .s2 {
+  margin-top: 50px;
+}
+
+.static_info .s2 ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.subicons_socials {
+  width: 200px;
+  height: 200px;
+}
+
+.input_data {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  left: 800px;
+  top: 1100px;
+}
+
+.input_data h1 {
+  padding: 10px;
+  font-size: 60px;
+}
+
+.input_data p {
+  padding: 2px 15px;
+  font-size: 30px;
+}
+
+.input_data form input {
+  display: block;
+  font-size: 50px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.input_data form .textarea {
+  height: 180px;
+}
+
+.submit_container {
+  float: right;
+}
+
+.submit_container button {
+  background: #1c206d;
+  color: #fab400;
+  font-size: 30px;
+  margin-right: 10px;
+  padding: 5px 25px;;
+}

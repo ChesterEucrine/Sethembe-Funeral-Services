@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Products</title>
+	<title>Our Products</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/products.css">
 	<link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
 	<header>
-
 		<div class="menu">
+			<img class="logo" src="logo2.png">
 			<ul>
-				<li><img class="logo" src="logoweb.png"></li>
-				<li id="home"><a href="index.html"><span>Home</span></a></li>
+				<li id="home" class="active"><a href="index.html"><span>Home</span></a></li>
 				<li id="aboutus"><a href="aboutus.html"><span>About Us</span></a></li>
-				<li id="products"><a href="products.html"><span>Products</span></a></li>
+				<li id="products"><a href="products.html"><span>Our Products</span></a></li>
 				<li id="claim"><a href="claim.html"><span>Claim</span></a></li>
 				<li id="contact"><a href="contact.html"><span>Contact</span></a></li>
 				<!--<li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>-->
@@ -23,365 +22,331 @@
 	</header>
 
 	<div class="body">
-		<!--<h1>Products Introduction</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<h1>Product 1</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-
-		<h1>Product 2</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<h1>Product 3</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>-->
-		<h1>Select a plan and see its details</h1>
-
-		<div class="tab">
-		  <button class="tablinks" onclick="openPlan(event, 'p1g6')"> 1 Person + 6 Family Members</button>
-		  <button class="tablinks" onclick="openPlan(event, 'p1f9')">1 Person + 9 Family Members</button>
-		  <button class="tablinks" onclick="openPlan(event, 'p2')">Member with Spouse</button>
-		  <button class="tablinks" onclick="openPlan(event, 'p1')">Single member plans</button>
-		  <button class="tablinks" onclick="openPlan(event, 'children')">Single member with children</button>
-		  <button class="tablinks" onclick="openPlan(event, 'Family')">Family Plan</button>
+		<div class="headings">
+			<h1 class="yellow_header">We offer 6 different plans that one can choose from.</h1>
+			<h1 class="quote">"Get covered with us today!"</h1>
 		</div>
 
-		<div id="p1g6" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>70</td>
-					<td>85</td>
-					<td>105</td>
-					<td>150</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>90</td>
-					<td>120</td>
-					<td>150</td>
-					<td>190</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>140</td>
-					<td>174</td>
-					<td>195</td>
-					<td>280</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>160</td>
-					<td>230</td>
-					<td>260</td>
-					<td>400</td>
-				</tr>
-			</table>
+		<div class="container">
+			<div class="tab">
+				<ul>
+					<li><button class="tablinks" onclick="openPlan(event, 'p1g6')"> 1 Person + 6 Family Members</button></li>
+					<li><button class="tablinks" onclick="openPlan(event, 'p1f9')">1 Person + 9 Family Members</button></li>
+				  <li><button class="tablinks" onclick="openPlan(event, 'p2')">Member with Spouse</button></li>
+				  <li><button class="tablinks" onclick="openPlan(event, 'p1')">Single member plans</button></li>
+				  <li><button class="tablinks" onclick="openPlan(event, 'children')">Single member with children</button></li>
+				  <li><button class="tablinks" onclick="openPlan(event, 'Family')">Family Plan</button></li>
+				</ul>
+			</div>
+
+			<div class="hidden_tables">
+
+				<div id="default" class="tabcontent">
+					<h1>Click on one of the Premiums</h1>
+				</div>
+
+				<div id="p1g6" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</span></th>
+							<th><span class="gold_colour bold">Payout</span></th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>70</td>
+							<td>85</td>
+							<td>105</td>
+							<td>150</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>90</td>
+							<td>120</td>
+							<td>150</td>
+							<td>190</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>140</td>
+							<td>174</td>
+							<td>195</td>
+							<td>280</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>160</td>
+							<td>230</td>
+							<td>260</td>
+							<td>400</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="p1f9" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</th>
+							<th><span class="gold_colour bold">Payout</th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>90</td>
+							<td>130</td>
+							<td>165</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>110</td>
+							<td>170</td>
+							<td>215</td>
+							<td>270</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>160</td>
+							<td>210</td>
+							<td>240</td>
+							<td>290</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>170</td>
+							<td>220</td>
+							<td>265</td>
+							<td>410</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="p2" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</span></th>
+							<th><span class="gold_colour bold">Payout</span></th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>60</td>
+							<td>80</td>
+							<td>100</td>
+							<td>125</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>93</td>
+							<td>105</td>
+							<td>120</td>
+							<td>160</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>140</td>
+							<td>156</td>
+							<td>192</td>
+							<td>210</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>190</td>
+							<td>250</td>
+							<td>280</td>
+							<td>330</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="p1" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</span></th>
+							<th><span class="gold_colour bold">Payout</span></th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>55</td>
+							<td>65</td>
+							<td>75</td>
+							<td>85</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>65</td>
+							<td>80</td>
+							<td>95</td>
+							<td>110</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>98</td>
+							<td>120</td>
+							<td>135</td>
+							<td>150</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>120</td>
+							<td>150</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="children" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</span></th>
+							<th><span class="gold_colour bold">Payout</span></th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>65</td>
+							<td>95</td>
+							<td>110</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>75</td>
+							<td>105</td>
+							<td>129</td>
+							<td>225</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>110</td>
+							<td>150</td>
+							<td>185</td>
+							<td>260</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>180</td>
+							<td>200</td>
+							<td>270</td>
+							<td>330</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="Family" class="tabcontent">
+					<h3>Plan Details</h3>
+					<table class="table-plan">
+						<tr>
+							<th><span class="white_colour bold">Age</span></th>
+							<th><span class="gold_colour bold">Payout</span></th>
+						</tr>
+						<tr>
+							<td><span class="gold_colour bold">Traditional plans</span></td>
+							<td>5000</td>
+							<td>7500</td>
+							<td>10000</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td>Under 65</td>
+							<td>70</td>
+							<td>80</td>
+							<td>100</td>
+							<td>145</td>
+						</tr>
+						<tr>
+							<td>Under 75</td>
+							<td>100</td>
+							<td>110</td>
+							<td>130</td>
+							<td>180</td>
+						</tr>
+						<tr>
+							<td>Under 85</td>
+							<td>170</td>
+							<td>185</td>
+							<td>230</td>
+							<td>280</td>
+						</tr>
+						<tr>
+							<td>Under 95</td>
+							<td>200</td>
+							<td>250</td>
+							<td>320</td>
+							<td>400</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 		</div>
 
-		<div id="p1f9" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>90</td>
-					<td>130</td>
-					<td>165</td>
-					<td>200</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>110</td>
-					<td>170</td>
-					<td>215</td>
-					<td>270</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>160</td>
-					<td>210</td>
-					<td>240</td>
-					<td>290</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>170</td>
-					<td>220</td>
-					<td>265</td>
-					<td>410</td>
-				</tr>
-			</table>
-		</div>
-
-		<div id="p2" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>60</td>
-					<td>80</td>
-					<td>100</td>
-					<td>125</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>93</td>
-					<td>105</td>
-					<td>120</td>
-					<td>160</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>140</td>
-					<td>156</td>
-					<td>192</td>
-					<td>210</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>190</td>
-					<td>250</td>
-					<td>280</td>
-					<td>330</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div id="p1" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>55</td>
-					<td>65</td>
-					<td>75</td>
-					<td>85</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>65</td>
-					<td>80</td>
-					<td>95</td>
-					<td>110</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>98</td>
-					<td>120</td>
-					<td>135</td>
-					<td>150</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>120</td>
-					<td>150</td>
-					<td></td>
-					<td></td>
-				</tr>
-			</table>
-		</div>
-		
-		<div id="children" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>65</td>
-					<td>95</td>
-					<td>110</td>
-					<td>200</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>75</td>
-					<td>105</td>
-					<td>129</td>
-					<td>225</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>110</td>
-					<td>150</td>
-					<td>185</td>
-					<td>260</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>180</td>
-					<td>200</td>
-					<td>270</td>
-					<td>330</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div id="Family" class="tabcontent">
-			<h3>Plan Details</h3>
-			<table class="table-plan">
-				<tr>
-					<th>Age</th>
-					<th>Payout</th>
-				</tr>
-				<tr>
-					<td>Traditional plans</td>
-					<td>5000</td>
-					<td>7500</td>
-					<td>10000</td>
-					<td>15000</td>
-				</tr>
-				<tr>
-					<td>Under 65</td>
-					<td>70</td>
-					<td>80</td>
-					<td>100</td>
-					<td>145</td>
-				</tr>
-				<tr>
-					<td>Under 75</td>
-					<td>100</td>
-					<td>110</td>
-					<td>130</td>
-					<td>180</td>
-				</tr>
-				<tr>
-					<td>Under 85</td>
-					<td>170</td>
-					<td>185</td>
-					<td>230</td>
-					<td>280</td>
-				</tr>
-				<tr>
-					<td>Under 95</td>
-					<td>200</td>
-					<td>250</td>
-					<td>320</td>
-					<td>400</td>
-				</tr>
-			</table>
-		</div>
 	</div>
 	<footer>
-		<a href="https://www.facebook.com/"><figure>
+		<div class="foot_container">
+				<div class="footer1">
+				<span>Sethembe Funeral Services</span>
+				<span>012 0065183/ 081 216 0200</span>
+				<span>info@sethembe.co.za</span>
+				<div class="gavanni">
+					<a><img src="images/gavanni.jpg" alt="Image of Gavanni"></a>
+				</div>
+			</div>
+			<div class="footer2">
+				<span>8114 Morudi Street,</span>
+				<span>Extension 36 (Absa side)</span>
+				<span>Olievenhoutbosch</span>
+				<span>Centurion</span>
+				<span>0187</span>
+			</div>
+			<div class="footer3">
+				<span>Mon - 08:30am-05:00pm</span>
+				<span>Tue - 08:30am-05:00pm</span>
+				<span>Wed- 08:30am-05:00pm</span>
+				<span>Thur- 08:30am-05:00pm</span>
+				<span>Fri - 08:30am-05:00pm</span>
+				<span>Sat - 08:30am-05:00pm</span>
+				<span>Sun - 08:30am-05:00pm</span>
+			</div>
+		</div>
+
+		<!--<a href="https://www.facebook.com/"><figure>
 			<img src="images/facebook.svg" alt="Facebook logo" />
 			<figcaption>Facebook</figcaption>
 		</figure></a>
@@ -392,7 +357,7 @@
 		<figure>
 			<img src="images/youtube.svg" alt="Youtube logo" />
 			<figcaption>Youtube</figcaption>
-		</figure>
+		</figure>-->
 		<div class="copyright">
 			© 2020 Gavanni. All Rights Reserved. New Era Life Insurance Co Ltd is an Authorised Financial Service Provider and registered insurer. FSP 2736 | KGA Life Limited, a licensed Insurer and Authorised Financial Services Provider. FSP 15980  T's and C's apply.
 		</div>

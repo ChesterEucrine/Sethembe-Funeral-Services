@@ -1,0 +1,106 @@
+.body div {
+  display: block;
+  margin: 20px;
+}
+
+.section1 {
+  height: 700px;
+  width: 97%;
+}
+
+.section1 div {
+  display: inline-block;
+  margin: 25px;
+}
+
+.section1 .quotefamily1 {
+  text-align: left;
+  width: 1000px;
+  height: 90%;
+  margin: 20px;
+  margin-left: 150px;
+  padding: 20px;
+}
+
+.section1 .quotefamily1 p {
+  font-size: 30px;
+  margin: 30px;
+  /* font-family: */
+}
+
+#motherandson {
+  width: 450px;
+  height: 450px;
+}
+
+.section1 .home_values {
+  text-align: left;
+  position: absolute;
+  padding: 40px;
+  font-size: 35px;
+  width: 400px;
+  height: 40%;
+  background: #1c206d;
+  color: #fff;
+}
+
+.section1 .home_values div {
+  margin-left: 80px;
+  font-size: 30px;
+}
+
+.section2 {
+  height: 600px;
+  width: 97%;
+}
+
+.section2 div {
+  display: inline-block;
+  margin: 25px;
+}
+
+.section2 .part1 {
+  background: #1c206d;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 75px;
+  margin-top: 450px;
+  text-align: center;
+}
+
+.section2 .aside {
+  position: absolute;
+  padding: 50px;
+  width: 60%;
+  height: 30%;
+}
+
+.section2 .aside h1 {
+  position: absolute;
+  font-size: 40px;
+  top: 30px;
+  left: 10px;
+}
+
+.section2 .aside hr {
+  background: #fab400;
+  height: 3px;
+  width: 110%;
+  position: absolute;
+  left: -10px;
+  top: 80px;
+}
+
+.section2 .aside ul {
+  position: absolute;
+  font-size: 30px;
+  top: 100px;
+}
+
+.home_yellow_box {
+  background: #fab400;
+  height: 500px;
+  width: 150px;
+  top: 850px;
+  position: absolute;
+}

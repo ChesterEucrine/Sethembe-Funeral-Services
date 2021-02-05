@@ -3,17 +3,17 @@
 <head>
 	<title>Contact</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="/css/contact.css">
 	<link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
 	<header>
-
 		<div class="menu">
+			<img class="logo" src="logo2.png">
 			<ul>
-				<li><img class="logo" src="logoweb.png"></li>
-				<li id="home"><a href="index.html"><span>Home</span></a></li>
+				<li id="home" class="active"><a href="index.html"><span>Home</span></a></li>
 				<li id="aboutus"><a href="aboutus.html"><span>About Us</span></a></li>
-				<li id="products"><a href="products.html"><span>Products</span></a></li>
+				<li id="products"><a href="products.html"><span>Our Products</span></a></li>
 				<li id="claim"><a href="claim.html"><span>Claim</span></a></li>
 				<li id="contact"><a href="contact.html"><span>Contact</span></a></li>
 				<!--<li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>-->
@@ -21,51 +21,91 @@
 		</div>
 	</header>
 
-	<div class="body form">
-		<h1>Fill in the form and we will contact you</h1>
-		<form>
-			<label for="fn">Full Name(Required)</label>
-			<input required id="fn" type="text" name="full_name" placeholder="Enter full name" />
-			
-			
-			<label for="email">Email Address(Required)</label>
-			<input required id="email" type="email" name="email" placeholder="Enter Email" />
-			
-			<label for="number">Mobile Number(SA Rquired)</label>
-			<input id="number" type="tel" name="number" placeholder="Enter Cellphone Number" />
-			
-			
-			<label for="query">Query Reasons(Required)</label>
-			<select id="query">
-				<option value="General Query">General Query</option>
-				<option value="Policy Details">Policy Details</option>
-				<option value="Claims Query">Claims Query</option>
-				<option value="Cancellation">Cancellation</option>
-			</select>
-			
-			<label>Comment(Required)</label>
-			<input id="textarea" required type="textarea" name="message" placeholder="Enter message query message" />
-
-			<div class="submit"><input type="submit" name="submit-claim" value="Submit"></div>
-		</form>
-	</div>
-	<footer>
-		<a href="https://www.facebook.com/"><figure>
-			<img src="images/facebook.svg" alt="Facebook logo" />
-			<figcaption>Facebook</figcaption>
-		</figure></a>
-		<figure>
-			<img src="images/instagram.svg" alt="Instagram logo" />
-			<figcaption>Instagram</figcaption>
-		</figure>
-		<figure>
-			<img src="images/youtube.svg" alt="Youtube logo" />
-			<figcaption>Youtube</figcaption>
-		</figure>
-		<div class="copyright">
-			© 2020 Gavanni. All Rights Reserved. New Era Life Insurance Co Ltd is an Authorised Financial Service Provider and registered insurer. FSP 2736 | KGA Life Limited, a licensed Insurer and Authorised Financial Services Provider. FSP 15980  T's and C's apply.
+	<div class="body">
+		<div class="contact_background_family">
+			<h1>Contact Us</h1>
+			<p>8114 Morudi Street, Extension 36 (Absa side) <br>
+				Olievenhoutbosch, Centurion 0187</p>
 		</div>
-	</footer>
+
+		<div class="container">
+			<div class="contact_info">
+				<div class="contact_yellow_block">
+
+				</div>
+				<div class="static_info">
+					<div class="s1">
+						<span><img class="subicons" src="images/icons/address.png"> <span>Sethembe Funeral Service</span></span>
+						<span><img class="subicons" src="images/icons/phone.png"> <span>012 0065183/ 081 216 0200</span></span>
+						<span><img class="subicons" src="images/icons/email.png"> <span>info@sethembe.co.za</span></span>
+					</div>
+					<div class="s2">
+						<ul>
+							<li><a href="https://www.facebook.com/"><img class="subicons_socials" src="images/icons/facebook.png" alt="Facebook logo" /></a></li>
+							<li><a href="https://www.facebook.com/"><img class="subicons_socials" src="images/icons/instagram.png" alt="Instagram logo" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="input_data">
+				<h1>Get in touch</h1>
+				<p>Fill the form and we will be in touch</p>
+				<form class="touch" action="contact.html" method="post">
+					<input type="text" name="full_name" placeholder="Full Name" required>
+					<input type="tel" name="cellphone" placeholder="Cell-Phone" required>
+					<input type="email" name="email" placeholder="Email" required>
+					<input class="textarea" type="textarea" name="message" placeholder="Message" required>
+					<div class="submit_container">
+						<button type="submit" name="button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		</div>
+		<footer>
+			<div class="foot_container">
+					<div class="footer1">
+					<span>Sethembe Funeral Services</span>
+					<span>012 0065183/ 081 216 0200</span>
+					<span>info@sethembe.co.za</span>
+					<div class="gavanni">
+						<a><img src="images/gavanni.jpg" alt="Image of Gavanni"></a>
+					</div>
+				</div>
+				<div class="footer2">
+					<span>8114 Morudi Street,</span>
+					<span>Extension 36 (Absa side)</span>
+					<span>Olievenhoutbosch</span>
+					<span>Centurion</span>
+					<span>0187</span>
+				</div>
+				<div class="footer3">
+					<span>Mon - 08:30am-05:00pm</span>
+					<span>Tue - 08:30am-05:00pm</span>
+					<span>Wed- 08:30am-05:00pm</span>
+					<span>Thur- 08:30am-05:00pm</span>
+					<span>Fri - 08:30am-05:00pm</span>
+					<span>Sat - 08:30am-05:00pm</span>
+					<span>Sun - 08:30am-05:00pm</span>
+				</div>
+			</div>
+
+			<!--<a href="https://www.facebook.com/"><figure>
+				<img src="images/facebook.svg" alt="Facebook logo" />
+				<figcaption>Facebook</figcaption>
+			</figure></a>
+			<figure>
+				<img src="images/instagram.svg" alt="Instagram logo" />
+				<figcaption>Instagram</figcaption>
+			</figure>
+			<figure>
+				<img src="images/youtube.svg" alt="Youtube logo" />
+				<figcaption>Youtube</figcaption>
+			</figure>-->
+			<div class="copyright">
+				© 2020 Gavanni. All Rights Reserved. New Era Life Insurance Co Ltd is an Authorised Financial Service Provider and registered insurer. FSP 2736 | KGA Life Limited, a licensed Insurer and Authorised Financial Services Provider. FSP 15980  T's and C's apply.
+			</div>
+		</footer>
     <script type="text/javascript" src="js/main.js">
 
     </script>

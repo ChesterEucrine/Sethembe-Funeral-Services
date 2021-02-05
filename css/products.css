@@ -1,23 +1,61 @@
 body {font-family: Arial;}
 
+.headings {
+  width: 97%;
+  height: 300px;
+}
+
+.yellow_header {
+    margin: 20px;
+    margin-bottom: 40px;
+    padding-left: 100px;
+    padding: 10px;
+    background: #fab400;
+    position: relative;
+    left: 0px;
+    width: 1040px;
+}
+
+.quote {
+  position: relative;
+  top: 60px;
+  left: 170px;
+  font-size: 45px;
+  background: #1c206d;
+  padding: 5px 10px;
+  color: #fff;
+  width: 750px;
+  text-align: center;
+}
+
+.container div {
+  display: inline-block;
+}
+
 /* Style the tab */
 .tab {
-  overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  height: 400px;
+  margin: 20px;
+}
+
+.tab ul li {
+  list-style: none;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  color: #000080;
-  float: left;
-  border: none;
-  outline: none;
+  background-color: #000080;
+  color: #fff;
+  width: 400px;
+  text-align: center;
+  margin: 5px;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Change background color of buttons on hover */
@@ -33,6 +71,12 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
+  position: absolute;
+  background: #000080;
+  width: 60%;
+  top: 570px;
+  left: 500px;
+  font-size: 30px;
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -41,13 +85,13 @@ body {font-family: Arial;}
 }
 
 table {
-  border: 1px solid #000080;
+  border: 1px solid #fab400;
 }
 
 tr {
-  border: 1px solid #000080;
+  border: 1px solid #fab400;
   margin: 5px;
-  padding: 5px;
+  padding: 15px;
 }
 
 .highligh {
@@ -55,8 +99,19 @@ tr {
 }
 
 td {
-  border: 1px solid #000080;
+  border: 1px solid #fab400;
   margin: 5px;
-  padding: 10px;
+  padding: 5px 60px;
+}
 
+.gold_colour {
+  color: #fab400;
+}
+
+.white_colour {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
 }
