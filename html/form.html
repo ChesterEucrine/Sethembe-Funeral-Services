@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sethembe Funeral Services</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/form.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo2.png" alt="Sethembe logo">
+    </header>
+    <div class="body">
+
+      <h1>APPLICATION FORM</h1>
+      <form class="app-form" action="form.html" method="GET">
+        <div class="page page1 active">
+          <h2>Premium Overview</h2>
+          <legend>Please select where applicable:</legend>
+
+          <div class="form-item rholder">
+            <label for="fplan">Funeral Plan(Required):</label>
+            <br>
+            <label class="form-selector"> <input type="radio" name="fplan" value="single">Single Member</label>
+            <label class="form-selector"> <input type="radio" name="fplan" value="p16f">Traditional(1+6)</label>
+            <label class="form-selector"> <input type="radio" name="fplan" value="p19f">Traditional(1+9)</label>
+          </div>
+
+          <div class="form-item cover">
+            <label>Cover Amount(Required):</label>
+            <select name="camount">
+              <option value="c1">R5 000</option>
+              <option value="c2">R7 500</option>
+              <option value="c3">R10 000</option>
+              <option value="c4">R15 000</option>
+            </select>
+          </div>
+
+          <p class="join-fee">Joining Fee: R100</p>
+          <h2 class="form-item member-details">MAIN MEMBER'S DETAILS(Required):</h2>
+
+          <div class="form-item user-info">
+            <input type="text" name="title" placeholder="Title" required>
+              <input type="text" name="surname" placeholder="Surname" required>
+              <input type="text" name="names" placeholder="Full name(s)" required>
+              <input type="text" name="id" placeholder="ID Number" required>
+          </div>
+
+          <div class="form-item address">
+            <label for="address">Residental Address(Required):</label>
+            <br>
+            <input type="text" name="street1" placeholder="Street Address
+            " required>
+            <input type="text" name="street2" placeholder="Street Address Line 2(Optional)">
+            <div class="sub">
+              <input type="text" name="city"
+              placeholder="City" required>
+              <input type="text" name="province" placeholder="State / Province" required>
+              <input type="number" name="postal" placeholder="Postal Code" required>
+            </div>
+          </div>
+
+          <div class="form-item date1">
+            <div>
+              <label for="cmonth">Commencement Month(Required):</label>
+              <input type="date" name="cmonth" placeholder="Insert First Month" required>
+            </div>
+            <div>
+              <label for="cmonth">Monthly Payment Date(Required):</label>
+              <input type="date" name="cmonth" placeholder="Insert First Month" required>
+            </div>
+          </div>
+
+          <div class="form-item date2">
+            <label for="jdate">Date Of Joining(Required):</label>
+            <input type="date" name="jdate" placeholder="Enter Joining Date" required>
+          </div>
+
+          <div class="form-item contact">
+            <h3>Contact Information(Required):</h3>
+            <input type="tel" name="cellphone" placeholder="Enter cellphone number" required>
+            <input type="tel" name="wcellphone" placeholder="Enter Work number(Optional)">
+            <input type="email" name="email" placeholder="Enter Email Address" required>
+        </div>
+        <div class="next-page">
+          <button type="button" onclick="move(2)">Next</button>
+        </div>
+      </div>
+
+      <div class="page page2">
+        <h2>DEPENDENT'S DETAILS</h2>
+        <table id="bene">
+          <tr>
+            <th class="tabn"></th>
+            <th class="tabh">Title</th>
+            <th class="tabh">Surname</th>
+            <th class="tabh">Full Names</th>
+            <th class="tabh">ID No/DOB</th>
+            <th class="tabh">Relationship</th>
+            <th class="tabh">Gender</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><input type="text" name="title1"></td>
+            <td><input type="text" name="surname1"></td>
+            <td><input type="text" name="full_name1"></td>
+            <td><input type="text" name="id1"></td>
+            <td><input type="text" name="relation1"></td>
+            <td>
+              <select class="" name="gender1">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <input id="nOfR" type="number" name="numberOfRows" value="1" style="visibility: hidden;">
+        <p> <span>Click Add to add a Dependent</span> <br><span>click Remove Last to remove the last Dependent</span></p>
+
+        <div class="add-person">
+          <button type="button" name="remove" onclick="removeLastRow()">Remove Last</button>
+          <button type="button" name="add" onclick="addRow()">Add</button>
+        </div>
+        <div class="next-page">
+          <button type="button" onclick="move(1)">Previous</button>
+          <button type="button" onclick="move(3)">Next</button>
+        </div>
+      </div>
+
+      <div class="page page3">
+        <h2>BENEFICIARY DETAILS</h2>
+        <div class="form-item bene-info">
+          <input type="text" name="bene-title" placeholder="Title" required>
+          <input type="text" name="bene-surname" placeholder="Surname" required>
+          <input type="text" name="bene-names" placeholder="Full Names" required>
+          <input type="number" name="bene-id" placeholder="ID Number" required>
+        </div>
+        <h2>TERMS AND CONDITIONS</h2>
+        <div class="form-item terms">
+          <ul>
+            <li>Natural death- six (6) months waiting period</li>
+            <li>Accidental death- 2 months waiting period</li>
+            <li>Age Limit- 94 years</li>
+            <li>Claims paid within 48 hours on receipt of required documentation</li>
+            <li>Children covered up to 21 years or 25 years if still studying or has a special or mental health condition</li>
+            <li>An annual increase of 10% on premiums, on the anniversary month of the policy</li>
+          </ul>
+        </div>
+
+        <h2>Documents required to claim:</h2>
+        <div class="form-item req">
+          <ul>
+            <li>Certified copy of death certificate- a serial number on top must be clearly visible</li>
+            <li>Certified ID copy of the deceased</li>
+            <li>Certified ID copy of the main member</li>
+            <li>Completed BI 1663 form (notification of death)</li>
+            <li>If death is unnatural, a police report must be attached</li>
+          </ul>
+        </div>
+        <div class="checks">
+          <label for="agreement"><input type="checkbox" name="agreement" required>I have read and understood the upbove T and C's</label>
+        </div>
+          <div class="next-page">
+            <button type="button" onclick="move(2)">Previous</button>
+            <button type="submit" value="submit" name="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      </div>
+	<footer>
+		<div class="foot_container">
+			<div class="footer1-icons">
+				<img src="images/icons/address.png" alt="address icon">
+				<img src="images/icons/phone.png" alt="contact icon">
+				<img src="images/icons/email.png" alt="email icon">
+			</div>
+				<div class="footer1">
+				<span>Sethembe Funeral Services</span>
+				<span>012 0065183/ 081 216 0200</span>
+				<span>info@sethembe.co.za</span>
+				<div class="gavanni">
+					<a><img src="images/gavanni.jpg" alt="Image of Gavanni"></a>
+				</div>
+			</div>
+			<div class="footer2-icons">
+				<img src="images/icons/location.png" alt="location icon">
+			</div>
+			<div class="footer2">
+				<span>8114 Morudi Street,</span>
+				<span>Extension 36 (Absa side)</span>
+				<span>Olievenhoutbosch</span>
+				<span>Centurion</span>
+				<span>0187</span>
+			</div>
+			<div class="footer3-icons">
+				<img src="images/icons/time.png" alt="time icon">
+			</div>
+			<div class="footer3">
+				<span>Mon - 08:30am-05:00pm</span>
+				<span>Tue - 08:30am-05:00pm</span>
+				<span>Wed- 08:30am-05:00pm</span>
+				<span>Thur- 08:30am-05:00pm</span>
+				<span>Fri - 08:30am-05:00pm</span>
+				<span>Sat - 08:30am-01:00pm</span>
+				<span>Closed</span>
+			</div>
+			<div class="copyright">
+				<p>&copy;2021 Sethembe Funeral Services. All rights reserved. Underwritten by Gavanni Group Schemes-an Authorized Financial Services Provider And Registered Insurer. FSP 2736</p>
+			</div>
+		</div>
+
+		<!--<a href="https://www.facebook.com/"><figure>
+			<img src="images/facebook.svg" alt="Facebook logo" />
+			<figcaption>Facebook</figcaption>
+		</figure></a>
+		<figure>
+			<img src="images/instagram.svg" alt="Instagram logo" />
+			<figcaption>Instagram</figcaption>
+		</figure>
+		<figure>
+			<img src="images/youtube.svg" alt="Youtube logo" />
+			<figcaption>Youtube</figcaption>
+		</figure>-->
+	</footer>
+    <script type="text/javascript">
+      function move(pageNum) {
+        var i, page1, page2, page3;
+
+        page1 = document.getElementsByClassName("page1");
+        page2 = document.getElementsByClassName("page2");
+        page3 = document.getElementsByClassName("page3");
+
+        if (pageNum == 1) {
+          for (var i=0;i<page1.length;i+=1){
+            page1[i].style.display = 'block';
+          }
+          for (var i=0;i<page2.length;i+=1){
+            page2[i].style.display = 'none';
+          }
+          for (var i=0;i<page3.length;i+=1){
+            page3[i].style.display = 'none';
+          }
+        }
+        if (pageNum == 2) {
+          for (var i=0;i<page1.length;i+=1){
+            page1[i].style.display = 'none';
+          }
+          for (var i=0;i<page2.length;i+=1){
+            page2[i].style.display = 'block';
+          }
+          for (var i=0;i<page3.length;i+=1){
+            page3[i].style.display = 'none';
+          }
+        }
+        if (pageNum == 3) {
+          for (var i=0;i<page1.length;i+=1){
+            page1[i].style.display = 'none';
+          }
+          for (var i=0;i<page2.length;i+=1){
+            page2[i].style.display = 'none';
+          }
+          for (var i=0;i<page3.length;i+=1){
+            page3[i].style.display = 'block';
+          }
+        }
+        window.scrollTo(0, 0);
+      }
+
+      var numberOfRows = 1;
+
+      function removeLastRow() {
+        if (numberOfRows <= 0) {
+          alert("Unable to remove any more Dependents")
+        } else {
+          var nOfR = document.getEgetElementById("nOfR");
+          var table = document.getElementById("bene");
+          table.deleteRow(numberOfRows);
+          numberOfRows -= 1;
+          nOfR.value = numberOfRows;
+        }
+      }
+
+      function addRow() {
+        if (numberOfRows >= 10) {
+          alert("Unable to add any more than 10 Dependents")
+        } else {
+          numberOfRows += 1;
+          var table = document.getElementById("bene");
+          var row = table.insertRow(numberOfRows);
+
+          var number = row.insertCell(0);
+          number.innerHTML = numberOfRows;
+
+          var title = row.insertCell(1);
+          var titleInput = document.createElement("input");
+          titleInput.type = "text";
+          titleInput.name = "title"+numberOfRows;
+          title.appendChild(titleInput);
+
+          var surname = row.insertCell(2);
+          var surnameInput = document.createElement("input");
+          surnameInput.type = "text";
+          surnameInput.name = "surname"+numberOfRows;
+          surname.appendChild(surnameInput);
+
+          var full_name = row.insertCell(3);
+          var full_nameInput = document.createElement("input");
+          full_nameInput.type = "text";
+          full_nameInput.name = "full_name"+numberOfRows;
+          full_name.appendChild(full_nameInput);
+
+          var id = row.insertCell(4);
+          var idInput = document.createElement("input");
+          idInput.type = "text";
+          idInput.name = "id"+numberOfRows;
+          id.appendChild(idInput);
+
+          var relation = row.insertCell(5);
+          var relationInput = document.createElement("input");
+          relationInput.type = "text";
+          relationInput.name = "relation"+numberOfRows;
+          relation.appendChild(relationInput);
+
+          var gender = row.insertCell(6);
+          var genderInput = document.createElement("select");
+          genderInput.name = "gender"+numberOfRows;
+          gender.appendChild(genderInput);
+
+          //Create and append the options
+          var array = ["Male","Female", "Other"];
+          for (var i = 0; i < array.length; i++) {
+            var option = document.createElement("option");
+            option.value = array[i].toLowerCase();
+            option.innerText = array[i];
+            genderInput.appendChild(option);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

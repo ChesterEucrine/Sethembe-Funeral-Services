@@ -7,25 +7,44 @@ body {font-family: Arial;}
 
 .yellow_header {
     margin: 20px;
-    margin-bottom: 40px;
-    padding-left: 100px;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
     padding: 10px;
     background: #fab400;
     position: relative;
     left: 0px;
-    width: 1040px;
+    width: 50rem;
+}
+
+a.cover_buttons {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .quote {
   position: relative;
-  top: 60px;
-  left: 170px;
-  font-size: 45px;
+  top: 2rem;
+  left: 20rem;
   background: #1c206d;
   padding: 5px 10px;
   color: #fff;
-  width: 750px;
+  width: 38.5rem;
   text-align: center;
+  font-size: 2.5rem;
+}
+
+.contact_quote {
+  position: absolute;
+  z-index: 100;
+  top: 55rem;
+  left: 40rem;
+  background: #1c206d;
+  padding: 5px 10px;
+  color: #fff;
+  width: 20rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .container div {
@@ -36,8 +55,8 @@ body {font-family: Arial;}
 .tab {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  height: 400px;
-  margin: 20px;
+  height: 23rem;
+  margin: 1rem;
 }
 
 .tab ul li {
@@ -46,37 +65,36 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: #000080;
+  background-color: #1c206d;
   color: #fff;
-  width: 400px;
+  width: 97%;
   text-align: center;
   margin: 5px;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.5s;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  color:  #FFD700;
+  color: #FFD700;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #000080;
+  background-color: #1c206d;
   color: #D1B000;
 }
 
 /* Style the tab content */
 .tabcontent {
   position: absolute;
-  background: #000080;
-  width: 60%;
-  top: 570px;
-  left: 500px;
-  font-size: 30px;
+  background: #eee;
+  top: 35rem;
+  left: 18.5rem;
+  font-size: 1rem;
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -90,8 +108,8 @@ table {
 
 tr {
   border: 1px solid #fab400;
-  margin: 5px;
-  padding: 15px;
+  margin: 0.1rem;
+  padding: 0.1rem;
 }
 
 .highligh {
@@ -101,7 +119,7 @@ tr {
 td {
   border: 1px solid #fab400;
   margin: 5px;
-  padding: 5px 60px;
+  padding: 5px 1.5rem;
 }
 
 .gold_colour {
@@ -114,4 +132,14 @@ td {
 
 .bold {
   font-weight: bold;
+}
+
+.default {
+  z-index: 300;
+  height: 17rem;
+  width: 35.5rem;
+}
+
+.dheader {
+  margin: 3.5rem;
 }

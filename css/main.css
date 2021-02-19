@@ -12,6 +12,8 @@ body {
 
 header {
 	background: #1c206d;
+	width: 100%;
+	font-family: Generica Bold;
 }
 
 .menu {
@@ -27,23 +29,22 @@ header {
 
 .logo {
 	width: 150px;
-	height: 150px;
 }
 
 .menu ul li {
 
 	list-style: none;
 	display: inline;
-	margin: 10px 25px;
+	margin: 10px 20px;
 	position: relative;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 150%;
 }
 
 .menu ul li a {
 	text-decoration: none;
 	color: #fff;
-}
+	height: 1rem;}
 
 .menu ul li::after {
 	content: '';
@@ -73,7 +74,7 @@ header {
 footer {
 	background: #a6a6a6;
 	color: #fff;
-	height: 250px;
+	height: 30rem;
 }
 
 .foot_container {
@@ -81,10 +82,12 @@ footer {
 }
 
 .foot_container div {
+font-family: "Times New Roman", Times, serif;
+font-weight: lighter;
 	display: inline-block;
 	text-align: left;
 	padding: 20px;
-	font-size: 1.2em;
+	font-size: 1.3rem;
 }
 
 .foot_container div span {
@@ -92,10 +95,20 @@ footer {
 }
 
 .footer1 {
-	position: relative;
-	top: 10px;
-	width: 30%;
-	height: 100%;
+	position: absolute;
+	left: 7rem;
+	width: 15rem;
+}
+
+.footer1-icons {
+	position: absolute;
+	left: 4.5rem;
+}
+
+.footer1-icons img {
+	display: block;
+	width: 3rem;
+	margin: 0.2rem;
 }
 
 .footer1 .gavanni a img {
@@ -112,12 +125,20 @@ footer {
 }
 
 .footer2 {
-	position: relative;
-	width: 30%;
-	height: 100%;
-	top: -90px;
+	position: absolute;
+	left: 27rem;
+	width: 15rem;
 }
 
+.footer2-icons {
+	position: absolute;
+	left: 24rem;
+}
+
+.footer2-icons img {
+	display: block;
+	width: 3rem;
+}
 
 .footer2 span {
 	padding: 3px;
@@ -125,10 +146,19 @@ footer {
 }
 
 .footer3 {
-	position: relative;
-	top: -50px;
-	width: 30%;
-	height: 100%;
+	position: absolute;
+	left: 45rem;
+	width: 15rem;
+}
+
+.footer3-icons {
+	position: absolute;
+	left: 42rem;
+}
+
+.footer3-icons img {
+	display: block;
+	width: 3rem;
 }
 
 .footer3 span {
@@ -150,6 +180,12 @@ footer {
 }
 
 .copyright {
-	color: #1c206d;
-	text-align: center;
+    position: relative;
+    top: 17rem;
+    color: #1c206d;
+    background: #a6a6a6;
+    text-align: center;
+    z-index: 2;
+    padding: 10px;
+    width: 39rem;
 }
