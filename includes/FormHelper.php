@@ -54,6 +54,7 @@ email=blessingdlamini24747%40gmail.com
   public $fplan;
   public $camount;
   public $title;
+  public $surname;
   public $names;
   public $id;
   public $street1;
@@ -86,12 +87,14 @@ submit=submit
   public $bene_surname;
   public $bene_names;
   public $bene_id;
+  public $fileName;
 
   function __construct($post){
     // Page 1
     $fplan = $post["fplan"];
     $camount = $post["camount"];
     $title = $post["title"];
+    $surname = $post['surname'];
     $names = $post["names"];
     $id = $post["id"];
     $street1 = $post["street1"];

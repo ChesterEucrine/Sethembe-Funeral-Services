@@ -52,9 +52,9 @@ class DatabaseHelper {
 /////////////////////////////////////////////////////////
   /*  Functions for the Sethembe queries table */
 
-  /* Get queries from querys table */
-  function getQueries() {
-    $this->database->query("SELECT * FROM QUERYS");
+  /* Get queries from LEADS table */
+  function getLeads() {
+    $this->database->query("SELECT * FROM LEADS");
     $result = $this->database->resultSet();
     $items = array();
     if ($result !== -1) {
@@ -74,22 +74,112 @@ class DatabaseHelper {
     }
     return $items;
   }
+
+
 // TODO:
-  // add an item to querys P0
-  // remove an item from querys P2
-  // remove all items from querys P2
+  // remove an item from LEADS P2
+  // remove all items from LEADS P2
   // backup/save as an excel file P1
 
-// FOR LATER USE
-// SELECT query_id FROM `QUERYS` WHERE query_id = (SELECT MAX(query_id) FROM QUERYS)
+/*
+  Function to retrieve the hightest and last query_id value;
+  */
+public function getLast() {
+  $sql = "SELECT query_id FROM `LEADS` WHERE query_id = (SELECT MAX(query_id) FROM LEADS)"
+  $this->database->query($sql);
+  return $this->database->resultSet();
+}
+
+/*
+  Function to add a query to the LEADS table;
+  from an array of the form data from the contact page
+   0 - Success
+  -1 - fail unable to get the last item's id
+  -2 - Unable to add a query to the table
+  */
+public function addQuery($value) {
+  // Get the last item's id
+  $max = $this->getLast();
+  if ($max !== -1) {
+    $max += 1;
+    $name = $value['name'];
+    $cellphone = $value['cellphone'];
+    $email = $value['message'];
+    $sql = "INSERT INTO LEADS VALUES('$max', '$name', '$cellphone', '$email', '$message')";
+
+    $this->database->query($sql);
+    $result = $this->database->resultSet();
+    if ($result !== -1) {
+      return 0;
+    } else {
+      return -2;
+    }
+  } else {
+    return -1;
+  }
+}
 
   /*  Functions for the applications table  */
 
 // TODO:
-  //  add applicant info to table P0
+  //   P0
+
+  /*  Function to add applicant info to CLIENTS table
+     0 - Success
+    -1 - Fail
+  */
+  public function addClient($client) {
+    $sql = "INSERT INTO CLIENTS VALUES(
+      $client->id,
+      $client->title,
+      $client->surname,
+      $client->names,
+      $client->street1,
+      $client->street2,
+      $client->city,
+      $client->province,
+      $client->postal,
+      $client->fplan,
+      $client->camount,
+      $client->cmonth,
+      $client->fmonth,
+      $client->jdate,
+      $client->cellphone,
+      $client->wcellpone,
+      $client->email,
+      $client->$fileName
+    )";
+
+    $this->database->query($sql);
+    $result = $this->database->resultSet();
+    if ($result !== -1) {
+      return 0;
+    } else {
+      return -1;
+    }
+  }
+
+    /*  Function to get applicant info from CLIENTS table
+
+    */
+    public function getClientInfo($id) {
+      $sql = "SELECT * FROM CLIENTS WHERE CLIENT_ID='$id'";
+      $this->database->query($sql);
+      $result = $this->database->resultSet();
+      if ($result !== -1) {
+        
+      }
+    }
+
+    public function getAllClients() {
+      // code...
+    }
+
   // remove applicant info from table P2
   // remove all apllicants P2
   // backup/save as an excel file P1
+
+
 
 
   /* Functions for the Dependents table */
