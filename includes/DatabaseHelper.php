@@ -163,16 +163,73 @@ public function addQuery($value) {
 
     */
     public function getClientInfo($id) {
-      $sql = "SELECT * FROM CLIENTS WHERE CLIENT_ID='$id'";
+      $sql = "SELECT * FROM CLIENTS WHERE ='$id'";
       $this->database->query($sql);
       $result = $this->database->resultSet();
+      $items = array();
       if ($result !== -1) {
-        
+        while ($dataResult = $result->fetch(PDO::FETCH_ASSOC)) {
+          $response = array();
+          $response['CLIENT_ID'] = $dataResult['CLIENT_ID'];
+          $response['TITLE'] = $dataResult['TITLE'];
+          $response['SURNAME'] = $dataResult['SURNAME'];
+          $response['NAME'] = $dataResult['NAME'];
+          $response['STREET1'] = $dataResult['STREET1'];
+          $response['STREET2'] = $dataResult['STREET2'];
+          $response['CITY'] = $dataResult['CITY'];
+          $response['PROVINCE'] = $dataResult['PROVINCE'];
+          $response['POSTAL'] = $dataResult['POSTAL'];
+          $response['F_PLAN'] = $dataResult['F_PLAN'];
+          $response['C_AMOUNT'] = $dataResult['C_AMOUNT'];
+          $response['C_MONTH'] = $dataResult['C_MONTH'];
+          $response['F_MONTH'] = $dataResult['F_MONTH'];
+          $response['J_DATE'] = $dataResult['J_DATE'];
+          $response['CELLPHONE'] = $dataResult['CELLPHONE'];
+          $response['WORKPHONE'] = $dataResult['WORKPHONE'];
+          $response['EMAIL'] = $dataResult['EMAIL'];
+          $response['ID_PATH'] = $dataResult['ID_PATH'];
+          $items[] = $response;
+        }
+        $items['error'] = 0;
+      } else {
+        $items['error'] = 1;
       }
+      return $items;
     }
 
     public function getAllClients() {
-      // code...
+      $sql = "SELECT * FROM CLIENTS";
+      $this->database->query($sql);
+      $result = $this->database->resultSet();
+      $items = array();
+      if ($result !== -1) {
+        while ($dataResult = $result->fetch(PDO::FETCH_ASSOC)) {
+          $response = array();
+          $response['CLIENT_ID'] = $dataResult['CLIENT_ID'];
+          $response['TITLE'] = $dataResult['TITLE'];
+          $response['SURNAME'] = $dataResult['SURNAME'];
+          $response['NAME'] = $dataResult['NAME'];
+          $response['STREET1'] = $dataResult['STREET1'];
+          $response['STREET2'] = $dataResult['STREET2'];
+          $response['CITY'] = $dataResult['CITY'];
+          $response['PROVINCE'] = $dataResult['PROVINCE'];
+          $response['POSTAL'] = $dataResult['POSTAL'];
+          $response['F_PLAN'] = $dataResult['F_PLAN'];
+          $response['C_AMOUNT'] = $dataResult['C_AMOUNT'];
+          $response['C_MONTH'] = $dataResult['C_MONTH'];
+          $response['F_MONTH'] = $dataResult['F_MONTH'];
+          $response['J_DATE'] = $dataResult['J_DATE'];
+          $response['CELLPHONE'] = $dataResult['CELLPHONE'];
+          $response['WORKPHONE'] = $dataResult['WORKPHONE'];
+          $response['EMAIL'] = $dataResult['EMAIL'];
+          $response['ID_PATH'] = $dataResult['ID_PATH'];
+          $items[] = $response;
+        }
+        $items['error'] = 0;
+      } else {
+        $items['error'] = 1;
+      }
+      return $items;
     }
 
   // remove applicant info from table P2
@@ -186,6 +243,23 @@ public function addQuery($value) {
 
 // TODO:
   // add applicant info to dependents table P0
+  public function addDependents($client_id, $dependents) {
+    $length = count($dependents);
+    $sql = "INSERT INTO DEPENDENTS VALUES (
+      '$client_id',
+
+    )"
+    CLIENT_ID VARCHAR(20) NOT NULL,
+    FOREIGN KEY CLIENT_ID REFERENCES CLIENTS(CLIENT_ID),
+    D_NUMBER INT(4) NOT NULL,
+    D_ID VARCHAR(20) PRIMARY KEY,
+    D_TITLE VARCHAR(10) NOT NULL,
+    D_SURNAME VARCHAR(10) NOT NULL,
+    D_NAME VARCHAR(20) NOT NULL,
+    RELATIONSHIP VARCHAR(10) NOT NULL,
+    GENDER VARCHAR(10) NOT NULL);
+
+  }
   // remove applicant info from dependents table P2
   // remove all applicant info P2
   // save as a json array or some form of storable data P1
